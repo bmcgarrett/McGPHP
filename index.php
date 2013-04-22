@@ -1,10 +1,15 @@
-<?php
-/**
- * Created by JetBrains PhpStorm.
- * User: bmcgarrett
- * Date: 4/22/13
- * Time: 7:29 PM
- * To change this template use File | Settings | File Templates.
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<h1>Hello, world!</h1>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
 
-echo 'Hello World';
