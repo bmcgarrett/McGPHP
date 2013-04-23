@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</head>
+<?php include_once('header.php'); ?>
 <body>
 <div class='container'>
-    <h1>TWITTER BOOTSTRAP TUTORIAL</h1>
+    <h1>PHP Test Page with Bootstrap</h1>
     <div class='navbar navbar-inverse'>
         <div class='navbar-inner nav-collapse' style="height: auto;">
             <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page One</a></li>
-                <li><a href="#">Page Two</a></li>
+                <li class="active"><a href="#"><i class='icon-home icon-white'></i> Home</a></li>
+                <li><a href="forms.php"><i class='icon-list-alt icon-white'></i> Forms Test</a></li>
+                <li><a href="mongo.php"><i class='icon-book icon-white'></i> MongoDB</a></li>
             </ul>
         </div>
     </div>
     <div id='content' class='row-fluid'>
         <div class='span9 main'>
-            <h2>Main Content Section</h2>
+            <h2>Change Log</h2>
         </div>
         <div class='span3 sidebar'>
             <h2>Sidebar</h2>
@@ -35,7 +25,6 @@
         </div>
     </div>
 </div>
-
 </body>
-</html>
+<?php include_once('footer.php'); ?>
 
