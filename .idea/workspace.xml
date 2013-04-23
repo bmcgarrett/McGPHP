@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88946ebc-fc0b-4318-9b30-5c68b9e53adc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="88946ebc-fc0b-4318-9b30-5c68b9e53adc" name="Default" comment="" />
     <ignored path="mcgphp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366680672724" ignored="false" />
@@ -12,6 +10,7 @@
     <file path="/forms.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366679446809" ignored="false" />
     <file path="/a.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682207553" ignored="false" />
     <file path="/dummy.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682195906" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682489980" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.7424699">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
+                <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -60,7 +68,10 @@
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.5">
-              <folding />
+              <folding>
+                <marker date="1366680294000" expanded="true" signature="21:410" placeholder="..." />
+                <marker date="1366680294000" expanded="true" signature="28:406" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -364,7 +375,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -380,7 +400,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -409,7 +438,10 @@
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.5">
-          <folding />
+          <folding>
+            <marker date="1366680294000" expanded="true" signature="21:410" placeholder="..." />
+            <marker date="1366680294000" expanded="true" signature="28:406" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,7 +463,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.7424699">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
+            <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
           </folding>
         </state>
       </provider>
