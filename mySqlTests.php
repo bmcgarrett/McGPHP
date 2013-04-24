@@ -28,10 +28,17 @@ if (!mysqli_query($con,$sqlInsert))
 
 $result = mysqli_query($con,"Select * From books");
 
+echo "<table class='table table-striped'>";
+echo "<thead><tr><th>ID</th><th>Title</th><th>Author</th></tr></thead>";
+echo "<tbody>";
+
 while ($row = mysqli_fetch_array($result))
 {
-    echo "Title: " . $row['title'] . "Author: " . $row["author"] . "</br>";
+    echo "<tr><td>".$row['id']."</td><td>".$row['title']."</td><td>".$row["author"]."</td></tr>";
 }
+
+echo "</tbody>";
+echo "</table>";
 
 mysqli_close($con);
 
