@@ -13,6 +13,8 @@
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682489980" ignored="false" />
     <file path="/mySqlTests.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366829470372" ignored="false" />
     <file path="/Azure MySQL" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366824168468" ignored="false" />
+    <file path="/header.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366830024317" ignored="false" />
+    <file path="/sqlite.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366833095825" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,12 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="-10.0">
-              <folding />
+              <folding>
+                <marker date="1366824594254" expanded="true" signature="72:428" placeholder="..." />
+                <marker date="1366824594254" expanded="true" signature="101:140" placeholder="..." />
+                <marker date="1366824594254" expanded="true" signature="172:421" placeholder="..." />
+                <marker date="1366824594254" expanded="true" signature="249:410" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mySqlTests.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mySqlTests.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mySqlTests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="40" selection-start="506" selection-end="506" vertical-scroll-proportion="0.32299012">
+            <state line="21" column="40" selection-start="506" selection-end="506" vertical-scroll-proportion="-13.125">
               <folding>
                 <element signature="e#6#164#0" expanded="true" />
               </folding>
@@ -66,10 +73,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sqlite.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sqlite.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="51" selection-start="279" selection-end="279" vertical-scroll-proportion="0.505618">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="10" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-14.375">
+            <state line="20" column="93" selection-start="1011" selection-end="1011" vertical-scroll-proportion="-12.5">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -81,7 +97,11 @@
         <entry file="file://$PROJECT_DIR$/forms.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="31" selection-start="444" selection-end="444" vertical-scroll-proportion="-7.5">
-              <folding />
+              <folding>
+                <marker date="1366824619287" expanded="true" signature="72:411" placeholder="..." />
+                <marker date="1366824619287" expanded="true" signature="98:404" placeholder="..." />
+                <marker date="1366824619287" expanded="true" signature="151:393" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,20 +127,21 @@
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="db-console:/490b4204/10a5d29a-9c57-4bd3-9dbc-59116e5cba7c/" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/forms.php" />
         <option value="$PROJECT_DIR$/mySqlTests.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/sqlite.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Acquia" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1432" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
-    <option name="height" value="916" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -285,7 +306,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1456" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -293,11 +314,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6703755" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19655667" sideWeight="0.68774706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19655667" sideWeight="0.6884562" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31225297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31154382" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -382,7 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo.php">
+    <entry file="file://$PROJECT_DIR$/sqlite.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -392,7 +413,11 @@
     <entry file="file://$PROJECT_DIR$/forms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1366824619287" expanded="true" signature="72:411" placeholder="..." />
+            <marker date="1366824619287" expanded="true" signature="98:404" placeholder="..." />
+            <marker date="1366824619287" expanded="true" signature="151:393" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -406,7 +431,12 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1366824594254" expanded="true" signature="72:428" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="101:140" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="172:421" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="249:410" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -420,7 +450,12 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1366824594254" expanded="true" signature="72:428" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="101:140" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="172:421" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="249:410" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -445,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="7" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.625">
@@ -462,20 +490,29 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="-10.0">
-          <folding />
+          <folding>
+            <marker date="1366824594254" expanded="true" signature="72:428" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="101:140" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="172:421" placeholder="..." />
+            <marker date="1366824594254" expanded="true" signature="249:410" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="31" selection-start="444" selection-end="444" vertical-scroll-proportion="-7.5">
-          <folding />
+          <folding>
+            <marker date="1366824619287" expanded="true" signature="72:411" placeholder="..." />
+            <marker date="1366824619287" expanded="true" signature="98:404" placeholder="..." />
+            <marker date="1366824619287" expanded="true" signature="151:393" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-14.375">
+        <state line="20" column="93" selection-start="1011" selection-end="1011" vertical-scroll-proportion="-12.5">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -484,10 +521,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mySqlTests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="506" selection-end="506" vertical-scroll-proportion="0.32299012">
+        <state line="21" column="40" selection-start="506" selection-end="506" vertical-scroll-proportion="-13.125">
           <folding>
             <element signature="e#6#164#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="51" selection-start="279" selection-end="279" vertical-scroll-proportion="0.505618">
+          <folding />
         </state>
       </provider>
     </entry>
