@@ -19,7 +19,15 @@ if (mysqli_connect_errno($con))
     echo "Failed to Connect o MySQL: " . mysqli_connect_error();
 }
 
-mysqli_query($con,"INSERT INTO books VALUES ($bTitle,$bAuthor)");
+$insertSuccess = mysqli_query($con,"INSERT INTO books VALUES ($bTitle,$bAuthor)");
+
+if($insertSuccess)
+{
+    echo 'Insert Successful';
+}
+else{
+    echo 'Insert NOT Successful';
+}
 
 $result = mysqli_query($con,"Select * From books");
 
