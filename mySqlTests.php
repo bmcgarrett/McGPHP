@@ -19,7 +19,7 @@ if (mysqli_connect_errno($con))
     echo "Failed to Connect o MySQL: " . mysqli_connect_error();
 }
 
-$sqlInsert = "INSERT INTO books VALUES ('$bTitle','$bAuthor')";
+$sqlInsert = "INSERT INTO books (title, author) VALUES ('$bTitle','$bAuthor')";
 
 if (!mysqli_query($con,$sqlInsert))
 {
