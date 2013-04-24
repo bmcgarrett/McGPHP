@@ -8,6 +8,7 @@
     <jdbc-url>jdbc:mysql://us-cdbr-azure-northcentral-a.cleardb.com/mcgphpMySQL</jdbc-url>
     <user-name>b2d6e1092e3131</user-name>
     <user-password>dfccdfcedf9fdfc9dfcbdf92dfcedfcc</user-password>
+    <default-dialect>MySQL</default-dialect>
     <libraries>
       <library>
         <url>jar://$PROJECT_DIR$/mysql-connector-java-5.1.22-bin.jar!/</url>

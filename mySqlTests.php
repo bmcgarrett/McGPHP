@@ -14,6 +14,14 @@ if (mysqli_connect_errno($con))
     echo "Failed to Connect o MySQL: " . mysqli_connect_error();
 }
 
+$bTitle = $_POST['bTitle'];
+$bAuthor = $_POST['bAuthor'];
+
+mysqli_query($con,"
+INSERT INTO books (title,id,author)
+VALUES ($bTitle,3,$bAuthor)
+");
+
 $result = mysqli_query($con,"Select * From books");
 
 while ($row = mysqli_fetch_array($result))
