@@ -20,8 +20,8 @@ $bTitle = $_POST['bTitle'];
 $bAuthor = $_POST['bAuthor'];
 
 mysqli_query($con,"
-INSERT INTO books ('title','id','author')
-VALUES ($bTitle,3,$bAuthor)
+INSERT INTO books (title,author)
+VALUES ($bTitle,$bAuthor)
 ");
 
 $result = mysqli_query($con,"Select * From books");
