@@ -18,7 +18,7 @@ $result = mysqli_query($con,"Select * From books");
 
 while ($row = mysqli_fetch_array($result))
 {
-    echo "Title: " . $row['title'] . "Author: " . $row["author"] . "/n";
+    echo "Title: " . $row['title'] . "Author: " . $row["author"] . "</br>";
 }
 
 mysqli_close($con);

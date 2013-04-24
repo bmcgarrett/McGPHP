@@ -48,7 +48,7 @@
       <file leaf-file-name="mySqlTests.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mySqlTests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="19" selection-start="571" selection-end="571" vertical-scroll-proportion="0.7986111">
+            <state line="20" column="73" selection-start="549" selection-end="549" vertical-scroll-proportion="0.6944444">
               <folding>
                 <element signature="e#6#164#0" expanded="true" />
               </folding>
@@ -298,7 +298,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -490,7 +490,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mySqlTests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="571" selection-end="571" vertical-scroll-proportion="0.7986111">
+        <state line="20" column="73" selection-start="549" selection-end="549" vertical-scroll-proportion="0.6944444">
           <folding>
             <element signature="e#6#164#0" expanded="true" />
           </folding>
