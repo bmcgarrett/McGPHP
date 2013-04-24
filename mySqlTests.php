@@ -7,6 +7,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
+include_once('header.php');
+
 $con = mysqli_connect("us-cdbr-azure-northcentral-a.cleardb.com","b2d6e1092e3131","fd5ca8df","mcgphpmysql");
 
 if (mysqli_connect_errno($con))
@@ -18,7 +20,7 @@ $bTitle = $_POST['bTitle'];
 $bAuthor = $_POST['bAuthor'];
 
 mysqli_query($con,"
-INSERT INTO books (title,id,author)
+INSERT INTO books ('title','id','author')
 VALUES ($bTitle,3,$bAuthor)
 ");
 
@@ -30,3 +32,5 @@ while ($row = mysqli_fetch_array($result))
 }
 
 mysqli_close($con);
+
+include_once('footer.php');
