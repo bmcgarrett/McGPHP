@@ -16,9 +16,9 @@
         <div class='navbar-inner nav-collapse' style="height: auto;">
             <ul class="nav">
                 <li class="active"><a href="index.php"><i class='icon-home icon-white'></i> Home</a></li>
-                <li><a href="forms.php"><i class='icon-list-alt icon-white'></i> Forms Test</a></li>
+                <li><a href="forms.php"><i class='icon-list-alt icon-white'></i> Forms</a></li>
                 <li><a href="mySqlTests.php"><i class='icon-hdd icon-white'></i> MySQL</a></li>
-                <li><a href="mongo.php"><i class='icon-book icon-white'></i> MongoDB</a></li>
+                <li><a href="sqlite.php"><i class='icon-book icon-white'></i> SQLite</a></li>
             </ul>
         </div>
     </div>
