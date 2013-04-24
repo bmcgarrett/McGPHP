@@ -4,13 +4,14 @@
     <list default="true" id="88946ebc-fc0b-4318-9b30-5c68b9e53adc" name="Default" comment="" />
     <ignored path="mcgphp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366680672724" ignored="false" />
-    <file path="/index.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366680666236" ignored="false" />
+    <file path="/Dummy.txt" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366813120984" ignored="false" />
+    <file path="/index.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366813625537" ignored="false" />
     <file path="/style.css" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366676951665" ignored="false" />
     <file path="/forms.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366679446809" ignored="false" />
     <file path="/a.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682207553" ignored="false" />
     <file path="/dummy.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682195906" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682489980" ignored="false" />
+    <file path="/mySqlTests.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366814285136" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,21 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.7424699">
+            <state line="9" column="36" selection-start="484" selection-end="484" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mySqlTests.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mySqlTests.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="19" selection-start="571" selection-end="571" vertical-scroll-proportion="0.7986111">
               <folding>
-                <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
-                <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
+                <element signature="e#6#164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,7 +59,7 @@
       <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.0">
+            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,11 +68,8 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.5">
-              <folding>
-                <marker date="1366680294000" expanded="true" signature="21:410" placeholder="..." />
-                <marker date="1366680294000" expanded="true" signature="28:406" placeholder="..." />
-              </folding>
+            <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +77,7 @@
       <file leaf-file-name="mongo.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,7 +86,7 @@
       <file leaf-file-name="forms.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="-5.230769">
+            <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,14 +124,16 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/mySqlTests.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="MAMP" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Acquia" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,7 +161,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,16 +209,22 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/acquia-drupal/php5_4" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.mcgphp">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -236,7 +241,14 @@
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="mcgphp" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="33055">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.mcgphp" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
@@ -286,24 +298,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6703755" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26040173" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -335,7 +347,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -371,21 +383,45 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -399,18 +435,7 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -430,18 +455,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="-5.230769">
+        <state line="8" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.5">
-          <folding>
-            <marker date="1366680294000" expanded="true" signature="21:410" placeholder="..." />
-            <marker date="1366680294000" expanded="true" signature="28:406" placeholder="..." />
-          </folding>
+        <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -461,18 +483,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.7424699">
+        <state line="9" column="36" selection-start="484" selection-end="484" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mySqlTests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="571" selection-end="571" vertical-scroll-proportion="0.7986111">
           <folding>
-            <marker date="1366680666000" expanded="true" signature="42:1038" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="66:1030" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="148:584" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="204:217" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="218:573" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="247:558" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="625:1023" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="658:705" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="741:1012" placeholder="..." />
-            <marker date="1366680666000" expanded="true" signature="820:997" placeholder="..." />
+            <element signature="e#6#164#0" expanded="true" />
           </folding>
         </state>
       </provider>

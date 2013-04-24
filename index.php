@@ -7,6 +7,7 @@
             <ul class="nav">
                 <li class="active"><a href="#"><i class='icon-home icon-white'></i> Home</a></li>
                 <li><a href="forms.php"><i class='icon-list-alt icon-white'></i> Forms Test</a></li>
+                <li><a href="mySqlTests.php"><i class='icon-hdd icon-white'></i> MySQL</a></li>
                 <li><a href="mongo.php"><i class='icon-book icon-white'></i> MongoDB</a></li>
             </ul>
         </div>
@@ -16,7 +17,7 @@
             <h2>Change Log</h2>
         </div>
         <div class='span3 sidebar'>
-            <h2>Sidebar</h2>
+            <h2>Secondary Nav</h2>
             <ul class="nav nav-tabs nav-stacked">
                 <li><a href='#'>Test Link 1</a></li>
                 <li><a href='#'>Test Link 2</a></li>
