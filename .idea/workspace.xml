@@ -8,10 +8,10 @@
     <file path="/index.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366824449798" ignored="false" />
     <file path="/style.css" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366676951665" ignored="false" />
     <file path="/forms.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366823772854" ignored="false" />
-    <file path="/a.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682207553" ignored="false" />
-    <file path="/dummy.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682195906" ignored="false" />
+    <file path="/a.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366826917350" ignored="false" />
+    <file path="/dummy.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366826917350" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682489980" ignored="false" />
-    <file path="/mySqlTests.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366826652658" ignored="false" />
+    <file path="/mySqlTests.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366827229258" ignored="false" />
     <file path="/Azure MySQL" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366824168468" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <file leaf-file-name="mySqlTests.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mySqlTests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="86" selection-start="552" selection-end="552" vertical-scroll-proportion="0.4861111">
+            <state line="25" column="35" selection-start="604" selection-end="604" vertical-scroll-proportion="0.625">
               <folding>
                 <element signature="e#6#164#0" expanded="true" />
               </folding>
@@ -484,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mySqlTests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="86" selection-start="552" selection-end="552" vertical-scroll-proportion="0.4861111">
+        <state line="25" column="35" selection-start="604" selection-end="604" vertical-scroll-proportion="0.625">
           <folding>
             <element signature="e#6#164#0" expanded="true" />
           </folding>
