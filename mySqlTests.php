@@ -19,11 +19,14 @@ if (mysqli_connect_errno($con))
     echo "Failed to Connect o MySQL: " . mysqli_connect_error();
 }
 
-$sqlInsert = "INSERT INTO books (title,author) VALUES ('$bTitle','$bAuthor')";
-
-if (!mysqli_query($con,$sqlInsert))
+if ($bTitle == null || $bAuthor == null)
 {
-    die('Error: ' . mysql_error());
+    $sqlInsert = "INSERT INTO books (title,author) VALUES ('$bTitle','$bAuthor')";
+
+    if (!mysqli_query($con,$sqlInsert))
+    {
+        die('Error: ' . mysql_error());
+    }
 }
 
 $result = mysqli_query($con,"Select * From books");

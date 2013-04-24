@@ -11,7 +11,7 @@
     <file path="/a.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366826917350" ignored="false" />
     <file path="/dummy.sql" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366826917350" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366682489980" ignored="false" />
-    <file path="/mySqlTests.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366828914904" ignored="false" />
+    <file path="/mySqlTests.php" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366829239610" ignored="false" />
     <file path="/Azure MySQL" changelist="88946ebc-fc0b-4318-9b30-5c68b9e53adc" time="1366824168468" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <file leaf-file-name="mySqlTests.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mySqlTests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="16" selection-start="972" selection-end="972" vertical-scroll-proportion="0.8411017">
+            <state line="29" column="1" selection-start="686" selection-end="686" vertical-scroll-proportion="0.23728813">
               <folding>
                 <element signature="e#6#164#0" expanded="true" />
               </folding>
@@ -484,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mySqlTests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="972" selection-end="972" vertical-scroll-proportion="0.8411017">
+        <state line="29" column="1" selection-start="686" selection-end="686" vertical-scroll-proportion="0.23728813">
           <folding>
             <element signature="e#6#164#0" expanded="true" />
           </folding>
