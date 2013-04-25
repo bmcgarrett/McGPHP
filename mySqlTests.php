@@ -9,9 +9,6 @@
 
 include_once('header.php');
 
-$bTitle = $_POST['bTitle'];
-$bAuthor = $_POST['bAuthor'];
-
 $con = ConnectToMySQL();
 
 AddBook($bTitle, $bAuthor, $con);
@@ -44,13 +41,17 @@ function ConnectToMySQL()
  */
 function AddBook($bTitle, $bAuthor, $con)
 {
-    if (isset($bTitle) || isset($bAuthor)) {
+    if (isset($_POST['bTitle']) || isset($_POST['bAuthor'])) {
+        $bTitle = $_POST['bTitle'];
+        $bAuthor = $_POST['bAuthor'];
+
         $sqlInsert = "INSERT INTO books (title,author) VALUES ('$bTitle','$bAuthor')";
 
         if (!mysqli_query($con, $sqlInsert)) {
             die('Error: ' . mysql_error());
         }
     }
+
 }
 
 /**
