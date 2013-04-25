@@ -49,10 +49,15 @@
       <file leaf-file-name="arrayTest.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/arrayTest.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="24" column="0" selection-start="589" selection-end="589" vertical-scroll-proportion="0.80536914">
               <folding>
                 <element signature="e#6#163#0" expanded="true" />
               </folding>
+=======
+            <state line="58" column="35" selection-start="1133" selection-end="1133" vertical-scroll-proportion="1.2592592">
+              <folding />
+>>>>>>> Updated workspace
             </state>
           </provider>
         </entry>
@@ -455,10 +460,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/arrayTest.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="24" column="0" selection-start="589" selection-end="589" vertical-scroll-proportion="0.80536914">
           <folding>
             <element signature="e#6#163#0" expanded="true" />
           </folding>
+=======
+        <state line="58" column="35" selection-start="1133" selection-end="1133" vertical-scroll-proportion="1.2592592">
+          <folding />
+>>>>>>> Updated workspace
         </state>
       </provider>
     </entry>
