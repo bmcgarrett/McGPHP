@@ -3,11 +3,7 @@ include_once('header.php');
 
 $db = OpenSQLiteConnection();
 
-$bookTitle = $_POST['bTitle'];
-
-$bookAuthor = $_POST['bAuthor'];
-
-AddBook($bookTitle, $bookAuthor, $db);
+AddBook($db);
 
 CreateBooksTable($db);
 
@@ -16,13 +12,14 @@ CloseSQLiteConnection($db);
 include_once('footer.php');
 
 /**
- * @param $bookTitle
- * @param $bookAuthor
  * @param $db
  */
-function AddBook($bookTitle, $bookAuthor, $db)
+function AddBook($db)
 {
-    if (isset($bookTitle) && isset($bookAuthor)) {
+    if (isset($_POST['bTitle']) && isset($_POST['bAuthor'])) {
+        $bookTitle = $_POST['bTitle'];
+        $bookAuthor = $_POST['bAuthor'];
+
         $insertStatement = "INSERT INTO books (TITLE,AUTHOR) VALUES ('$bookTitle','$bookAuthor')";
 
         $result = $db->query($insertStatement);
