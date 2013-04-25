@@ -1,34 +1,45 @@
 <?php
-
 include_once('header.php');
 
-$dbhandle = sqlite_open("test.db",0666,$error);
+$db = new SQLite3("test.db");
 
+$bookTitle = $_POST['bTitle'];
 
+$bookAuthor = $_POST['bAuthor'];
 
-if (!$dbhandle)
+if (isset($bookTitle) && isset($bookAuthor))
 {
-    die($error);
+    $insertStatement = "INSERT INTO books (TITLE,AUTHOR) VALUES ('$bookTitle','$bookAuthor')";
+
+    $result = $db->query($insertStatement);
+
+    if(!$result)
+    {
+        die('Book not added');
+
+    }
 }
 
-$createTable = "CREATE TABLE books(ID INTEGER PRIMARY KEY ASC,TITLE VARCHAR(50),AUTHOR VARCHAR(50))";
+$selBooks = 'SELECT * FROM Books';
 
-$createTableRun = sqlite_exec($createTable,$error);
+$resultAllBooks = $db->query($selBooks);
 
-if (!$createTableRun)
+//$resultArray = $resultAllBooks->fetchArray();
+
+echo "<h1>SQLite Books Database</h1>";
+echo "<table class='table table-striped'>";
+echo "<thead><tr><th>ID</th><th>Title</th><th>Author</th></tr></thead>";
+echo "<tbody>";
+
+while($row = $resultAllBooks->fetchArray(SQLITE3_ASSOC))
 {
-    die("Cannot Execute Query. $error");
+    echo "<tr><td>".$row["ID"]."</td><td>".$row["TITLE"]."</td><td>".$row["AUTHOR"]."</td></tr>";
 }
 
-$insertRow = "INSERT INTO books VALUES(1,'Node JS','McGarrett, Brendan')";
+echo "</tbody>";
+echo "</table>";
 
-$insertRowRun = sqlite_exec($insertRow,$error);
-
-if (!$insertRowRuns)
-{
-    die("Cannot Insert. $error");
-}
-
+$db->close();
 
 
 include_once('footer.php');

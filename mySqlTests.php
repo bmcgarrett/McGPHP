@@ -19,7 +19,7 @@ if (mysqli_connect_errno($con))
     echo "Failed to Connect o MySQL: " . mysqli_connect_error();
 }
 
-if (is_null($bTitle) || is_null($bAuthor))
+if (isset($bTitle) || isset($bAuthor))
 {
     $sqlInsert = "INSERT INTO books (title,author) VALUES ('$bTitle','$bAuthor')";
 
@@ -31,6 +31,7 @@ if (is_null($bTitle) || is_null($bAuthor))
 
 $result = mysqli_query($con,"Select * From books");
 
+echo "<h1>MySQL Books Database</h1>";
 echo "<table class='table table-striped'>";
 echo "<thead><tr><th>ID</th><th>Title</th><th>Author</th></tr></thead>";
 echo "<tbody>";

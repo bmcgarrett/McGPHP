@@ -1,4 +1,4 @@
-//Header Information for Site
+
 <!DOCTYPE html>
 <html>
 <head>
