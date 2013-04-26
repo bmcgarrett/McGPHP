@@ -6,8 +6,17 @@
  * Time: 10:29 AM
  * To change this template use File | Settings | File Templates.
  */
-
 include_once('header.php');
+include_once('log4php/logger.php');
+
+// Tell log4php to use our configuration file.
+Logger::configure('configuration/log4php.xml');
+
+// Fetch a logger, it will inherit settings from the root logger
+
+$mylog = Logger::getLogger('myLogger');
+
+$mylog->warn("User is on mySQL Page");
 
 $con = ConnectToMySQL();
 
@@ -25,12 +34,16 @@ include_once('footer.php');
  */
 function ConnectToMySQL()
 {
+
     $con = mysqli_connect("us-cdbr-azure-northcentral-a.cleardb.com", "b2d6e1092e3131", "fd5ca8df", "mcgphpmysql");
 
     if (mysqli_connect_errno($con)) {
         echo "Failed to Connect o MySQL: " . mysqli_connect_error();
+        $mylog->warn("Couldn't connect to MySQL");
         return $con;
     }
+
+    $mylog->warn('connected to mysql');
     return $con;
 }
 
