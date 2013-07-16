@@ -28,7 +28,7 @@
         <div class="row">
             <div class="span6">
                 <h1>PHP Twitter Bootstrap</h1>
-                <p class="lead">Twitter Bootstrap Example built on PHP and MySQL</p>
+                <p class="lead">Twitter Bootstrap Example</p>
             </div>
         </div>
     </header>
