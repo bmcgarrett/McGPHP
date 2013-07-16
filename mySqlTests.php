@@ -77,7 +77,7 @@ function CreateTableFromBooks($con)
     $bookCount = 0;
     while ($row = mysqli_fetch_array($result)) {
         $bookCount++;
-        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a><td></tr>";
+        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a></td></tr>";
     }
 
     echo "</tbody>";
