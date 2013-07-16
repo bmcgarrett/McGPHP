@@ -50,7 +50,7 @@
         echo "<thead><tr><th>ID</th><th>Title</th><th>Author</th></tr></thead>";
         echo "<tbody>";
 
-        while ($row = $resultAllBooks->fetchArray(SQLITE3_ASSOC)) {
+        while ($row = $resultAllBooks->fetch(PDO::FETCH_ASSOC)) {
             echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["TITLE"] . "</td><td>" . $row["AUTHOR"] . "</td></tr>";
         }
 
@@ -63,7 +63,7 @@
      */
     function OpenSQLiteConnection()
     {
-        $db = new SQLite3("test.db");
+        $db = new PDO("test.db");
         return $db;
     }
 
