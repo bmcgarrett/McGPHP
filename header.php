@@ -19,7 +19,14 @@
     </div>
 </div>
 <div class='container'>
-    <h1>PHP Test Site with Bootstrap</h1>
+    <header class="jumbotron subhead" id="overview">
+        <div class="row">
+            <div class="span6">
+                <h1>PHP Twitter Bootstrap</h1>
+                <p class="lead">Twitter Bootstrap Example built on PHP and MySQL</p>
+            </div>
+        </div>
+    </header>
 
 
 
