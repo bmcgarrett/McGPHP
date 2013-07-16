@@ -63,7 +63,7 @@
      */
     function OpenSQLiteConnection()
     {
-        $db = new PDO("test.db");
+        $db = new PDO("sqlite:/test.db");
         return $db;
     }
 
