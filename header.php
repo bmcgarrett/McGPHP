@@ -9,9 +9,9 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
-<body class="preview" id="top" data-spy="scroll" data-target=".subvav" data-offset="80">
+<body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
 <div class='navbar navbar-fixed-top'>
-    <div class='navbar-inner nav-collapse' style="height: auto;">
+    <div class='navbar-inner' style="height: auto;">
         <ul class="nav">
             <li class="active"><a href="index.php"><i class='icon-home'></i> Home</a></li>
             <li><a href="mySqlTests.php"><i class='icon-hdd'></i> MySQL</a></li>
