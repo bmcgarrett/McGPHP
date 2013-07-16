@@ -12,11 +12,13 @@
 <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
 <div class='navbar navbar-fixed-top'>
     <div class='navbar-inner'>
-        <div class="nav-collapse collapse" id="main-menu">
-            <ul class="nav" id="main-menu-left">
-                <li class="active"><a href="index.php"><i class='icon-home'></i> Home</a></li>
-                <li><a href="mySqlTests.php"><i class='icon-hdd'></i> MySQL</a></li>
-            </ul>
+       <div class="container">
+            <div class="nav-collapse collapse" id="main-menu">
+                <ul class="nav" id="main-menu-left">
+                    <li class="active"><a href="index.php"><i class='icon-home'></i> Home</a></li>
+                    <li><a href="mySqlTests.php"><i class='icon-hdd'></i> MySQL</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
