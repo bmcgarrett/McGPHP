@@ -9,14 +9,7 @@
 include_once('header.php');
 include_once('log4php/logger.php');
 
-// Tell log4php to use our configuration file.
-Logger::configure('configuration/log4php.xml');
 
-// Fetch a logger, it will inherit settings from the root logger
-
-$mylog = Logger::getLogger('myLogger');
-
-$mylog->warn("User is on mySQL Page");
 
 $con = ConnectToMySQL();
 
@@ -39,11 +32,11 @@ function ConnectToMySQL()
 
     if (mysqli_connect_errno($con)) {
         echo "Failed to Connect o MySQL: " . mysqli_connect_error();
-        $mylog->warn("Couldn't connect to MySQL");
+       
         return $con;
     }
 
-    $mylog->warn('connected to mysql');
+   
     return $con;
 }
 
