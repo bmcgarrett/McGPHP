@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +12,7 @@
 <body>
 <div class='container'>
     <h1>PHP Test Site with Bootstrap</h1>
-    <div class='navbar navbar-inverse'>
+    <div class='navbar'>
         <div class='navbar-inner nav-collapse' style="height: auto;">
             <ul class="nav">
                 <li class="active"><a href="index.php"><i class='icon-home icon-white'></i> Home</a></li>
