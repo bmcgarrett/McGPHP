@@ -9,9 +9,11 @@
 include_once('header.php');
 include_once('log4php/logger.php');
 
+$conn_str = getenv("MYSQLCONNSTR_mcgphpMySQL");
 
+$myConnectionArray = connStrToArray($conn_str);
 
-$con = ConnectToMySQL();
+$con = ConnectToMySQL($myConnectionArray);
 
 AddBook($bTitle, $bAuthor, $con);
 
@@ -25,11 +27,10 @@ include_once('footer.php');
 /**
  * @return mysqli
  */
-function ConnectToMySQL()
+function ConnectToMySQL($myConnectionArray)
 {
-    $conn_str = getenv("MYSQLCONNSTR_mcgphpMySQL");
 
-    $con = mysqli_connect($conn_str);
+    $con = mysqli_connect($myConnectionArray['Data Source'],$myConnectionArray['User Id'],$myConnectionArray['Password'],$myConnectionArray['Database']);
 
     if (mysqli_connect_errno($con)) {
         echo "Failed to Connect o MySQL: " . mysqli_connect_error();
@@ -87,4 +88,26 @@ function CreateTableFromBooks($con)
 function CloseMySQLConnection($con)
 {
     mysqli_close($con);
+}
+
+function connStrToArray($conn_str){
+ 
+    // Initialize array.
+    $conn_array = array();
+ 
+    // Split conn string on semicolons. Results in array of "parts".
+    $parts = explode(";", $conn_str);
+ 
+ 
+    // Loop through array of parts. (Each part is a string.)
+    foreach($parts as $part){
+ 
+        // Separate each string on equals sign. Results in array of 2 items.
+        $temp = explode("=", $part);
+ 
+        // Make items key=>value pairs in returned array.
+        $conn_array[$temp[0]] = $temp[1];
+    }
+ 
+    return $conn_array;
 }
