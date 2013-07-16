@@ -10,16 +10,17 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class='navbar navbar-fixed-top'>
+    <div class='navbar-inner nav-collapse' style="height: auto;">
+        <ul class="nav">
+            <li class="active"><a href="index.php"><i class='icon-home'></i> Home</a></li>
+            <li><a href="mySqlTests.php"><i class='icon-hdd'></i> MySQL</a></li>
+        </ul>
+    </div>
+</div>
 <div class='container'>
     <h1>PHP Test Site with Bootstrap</h1>
-    <div class='navbar'>
-        <div class='navbar-inner nav-collapse' style="height: auto;">
-            <ul class="nav">
-                <li class="active"><a href="index.php"><i class='icon-home'></i> Home</a></li>
-                <li><a href="mySqlTests.php"><i class='icon-hdd'></i> MySQL</a></li>
-            </ul>
-        </div>
-    </div>
+
 
 
 
