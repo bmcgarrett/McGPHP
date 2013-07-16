@@ -13,6 +13,7 @@
 <div class='navbar navbar-fixed-top'>
     <div class='navbar-inner'>
        <div class="container">
+       <a class="brand" href="../">PHP Bootstrap</a>
             <div class="nav-collapse collapse" id="main-menu">
                 <ul class="nav" id="main-menu-left">
                     <li class="active"><a href="index.php"><i class='icon-home'></i> Home</a></li>
