@@ -29,9 +29,9 @@ CloseMySQLConnection($con);
         <h3>Add Book</h3>
     </div>
     <div class="modal-body">
-        <p>Book Title</p>
+        <h4>Book Title</h4>
         <input type="textfield">
-        <p>Author</p>
+        <h4>Author</h4>
         <input type="textfield">
     </div>
     <div class="modal-footer">
