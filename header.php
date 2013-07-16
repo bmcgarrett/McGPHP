@@ -9,7 +9,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="preview" id="top" data-spy="scroll" data-target=".subvav" data-offset="80">
 <div class='navbar navbar-fixed-top'>
     <div class='navbar-inner nav-collapse' style="height: auto;">
         <ul class="nav">
