@@ -82,6 +82,7 @@ function CreateTableFromBooks($con)
 
     echo "</tbody>";
     echo "</table>";
+    echo "<a class='btn' href='#'>Add Book</a>";
 }
 
 /**
