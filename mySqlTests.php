@@ -74,8 +74,10 @@ function CreateTableFromBooks($con)
     echo "<thead><tr><th id='deleteColumnHeading'></th><th>ID</th><th>Title</th><th>Author</th><th></th></tr></thead>";
     echo "<tbody>";
 
+    $bookCount = 0;
     while ($row = mysqli_fetch_array($result)) {
-        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $row['id'] . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a><td></tr>";
+        $bookCount++;
+        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a><td></tr>";
     }
 
     echo "</tbody>";
