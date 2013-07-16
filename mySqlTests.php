@@ -21,7 +21,29 @@ CreateTableFromBooks($con);
 
 CloseMySQLConnection($con);
 
+?>
+
+<div id="addBookModal" class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Add Book</h3>
+    </div>
+    <div class="modal-body">
+        <p>Book Title</p>
+        <input type="textfield">
+        <p>Author</p>
+        <input type="textfield">
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
+
+<?php
+
 include_once('footer.php');
+
 
 
 /**
@@ -82,7 +104,7 @@ function CreateTableFromBooks($con)
 
     echo "</tbody>";
     echo "</table>";
-    echo "<a class='btn' href='#'>Add Book</a>";
+    echo "<a class='btn' href='#addBookModal'>Add Book</a>";
 }
 
 /**
