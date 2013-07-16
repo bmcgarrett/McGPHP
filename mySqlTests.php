@@ -30,13 +30,13 @@ CloseMySQLConnection($con);
     </div>
     <div class="modal-body">
         <h4>Book Title</h4>
-        <input type="textfield">
+        <input id="bookTitleInput" type="textfield">
         <h4>Author</h4>
-        <input type="textfield">
+        <input id="bookAuthorInput" type="textfield">
     </div>
     <div class="modal-footer">
         <a href="#" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
+        <a id="saveBtnAddBook" href="#" class="btn btn-primary">Save changes</a>
     </div>
 </div>
 
