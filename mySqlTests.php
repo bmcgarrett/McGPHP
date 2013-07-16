@@ -70,7 +70,7 @@ function CreateTableFromBooks($con)
     $result = mysqli_query($con, "Select * From books");
 
     echo "<h1>MySQL Books Database</h1>";
-    echo "<table class='table table-striped'>";
+    echo "<table class='table table-striped table-bordered table-hover'>";
     echo "<thead><tr><th id='deleteColumnHeading'></th><th>ID</th><th>Title</th><th>Author</th><th></th></tr></thead>";
     echo "<tbody>";
 
