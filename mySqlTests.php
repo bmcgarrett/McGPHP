@@ -104,7 +104,7 @@ function CreateTableFromBooks($con)
 
     echo "</tbody>";
     echo "</table>";
-    echo "<a class='btn' href='#addBookModal'>Add Book</a>";
+    echo "<a class='btn' href='#addBookModal' data-toggle='modal' role='button'>Add Book</a>";
 }
 
 /**
