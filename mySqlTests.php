@@ -75,7 +75,7 @@ function CreateTableFromBooks($con)
     echo "<tbody>";
 
     while ($row = mysqli_fetch_array($result)) {
-        echo "<tr><td><a class='btn' href='#'><td>" . $row['id'] . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td></tr>";
+        echo "<tr><td><a class='btn' href='#'>Delete</a><td>" . $row['id'] . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td></tr>";
     }
 
     echo "</tbody>";
