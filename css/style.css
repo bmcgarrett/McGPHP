@@ -1,3 +1,7 @@
 .preview {
 	padding-top: 100px;
 }
+
+#deleteColumnHeading {
+	width: 50px;
+}
