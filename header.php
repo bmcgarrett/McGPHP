@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mcgphp.js"></script>
 </head>
 <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
 <div class='navbar navbar-fixed-top'>
