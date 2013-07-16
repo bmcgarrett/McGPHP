@@ -71,11 +71,11 @@ function CreateTableFromBooks($con)
 
     echo "<h1>MySQL Books Database</h1>";
     echo "<table class='table table-striped'>";
-    echo "<thead><tr><th id='deleteColumnHeading'>Delete</th><th>ID</th><th>Title</th><th>Author</th></tr></thead>";
+    echo "<thead><tr><th id='deleteColumnHeading'></th><th>ID</th><th>Title</th><th>Author</th><th></th></tr></thead>";
     echo "<tbody>";
 
     while ($row = mysqli_fetch_array($result)) {
-        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $row['id'] . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td></tr>";
+        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $row['id'] . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a><td></tr>";
     }
 
     echo "</tbody>";
