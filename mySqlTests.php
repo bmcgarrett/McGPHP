@@ -27,8 +27,9 @@ include_once('footer.php');
  */
 function ConnectToMySQL()
 {
+    $conn_str = getenv("MYSQLCONNSTR_mcgphpMySQL");
 
-    $con = mysqli_connect("us-cdbr-azure-northcentral-a.cleardb.com", "b2d6e1092e3131", "fd5ca8df", "mcgphpmysql");
+    $con = mysqli_connect($conn_str);
 
     if (mysqli_connect_errno($con)) {
         echo "Failed to Connect o MySQL: " . mysqli_connect_error();
