@@ -25,7 +25,8 @@ $(document).ready(function() {
     //Edit Book Functions
     $(document).on('click','#editBookBtn',function(){
         rowIDNum = $(this).parent().parent().attr('rowID');
-
+        $('#bookTitleInputEdit').val($(this).parent().parent().find('#bookTitleField').text());
+        $('#bookAuthorInputEdit').val($(this).parent().parent().find('#bookAuthorField').text());
     });
 
     $(document).on('click','#saveBtnEditBook',function(){
