@@ -119,7 +119,7 @@ function DeleteBook($con)
 function EditBook($con)
 {
     if ( isset($_POST['editTitleNew']) ) {
-       // echo "<h3>insde function</h3>";
+        echo "<h3>insde function</h3>";
         $editTitleOld = $_POST['editTitleOld'];
         $editTitleNew = $_POST['editTitleNew'];
         $editAuthorOld = $_POST['editAuthorOld'];
