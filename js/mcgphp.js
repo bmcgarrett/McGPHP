@@ -8,6 +8,10 @@ $(document).ready(function() {
         $.post("/mySqlTests.php", { bTitle: myBookTitle, bAuthor: myBookAuthor }).done(function () {
             window.location = "/mySqlTests.php";
         });
-
     });
+
+    $('#deleteBookRow').on("click",function(){
+        var bookTitleField = $(this).parent().parent().find('#bookTitleField').text();
+        alert(bookTitleField);
+    })
 });

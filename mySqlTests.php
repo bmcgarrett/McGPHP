@@ -51,7 +51,6 @@ include_once('footer.php');
  */
 function ConnectToMySQL($myConnectionArray)
 {
-
     $con = mysqli_connect($myConnectionArray['Data Source'],$myConnectionArray['User Id'],$myConnectionArray['Password'],$myConnectionArray['Database']);
 
     if (mysqli_connect_errno($con)) {
@@ -60,7 +59,6 @@ function ConnectToMySQL($myConnectionArray)
         return $con;
     }
 
-   
     return $con;
 }
 
@@ -81,7 +79,6 @@ function AddBook($bTitle, $bAuthor, $con)
             die('Error: ' . mysql_error());
         }
     }
-
 }
 
 /**
@@ -99,7 +96,7 @@ function CreateTableFromBooks($con)
     $bookCount = 0;
     while ($row = mysqli_fetch_array($result)) {
         $bookCount++;
-        echo "<tr><td><a class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td>" . $row['title'] . "</td><td>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a></td></tr>";
+        echo "<tr><td><a id='deleteBookRow' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $row['title'] . "</td><td id='bookAuthorField'>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a></td></tr>";
     }
 
     echo "</tbody>";
