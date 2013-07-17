@@ -9,7 +9,7 @@ $(document).ready(function() {
         var myBookTitle = $('#bookTitleInput').val();
         var myBookAuthor = $('#bookAuthorInput').val();
         $.post("/mySqlTests.php", { bTitle: myBookTitle, bAuthor: myBookAuthor }).done(function () {
-            window.location = "/mySqlTests.php";
+            window.location = "/mySql.php";
         });
     });
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
         var bookTitleField = $(this).parent().parent().find('#bookTitleField').text();
         var bookAuthorField = $(this).parent().parent().find('#bookAuthorField').text();
         $.post("/mySqlTests.php", { removeTitle: bookTitleField, removeAuthor: bookAuthorField }).done(function () {
-            window.location = "/mySqlTests.php";
+            window.location = "/mySql.php";
         });
     });
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
         var bookTitleField = $('#bookTitleInputEdit').val();
         var bookAuthorField = $('#bookAuthorInputEdit').val();
         $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField, rowIDToChange: rowIDNum }).done(function () {
-            window.location = "/mySqlTests.php";
+            window.location = "/mySql.php";
         });
     });
 });
