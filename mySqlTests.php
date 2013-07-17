@@ -90,7 +90,7 @@ function DeleteBook($con)
         $removeTitle = $_POST['removeTitle'];
         $removeAuthor = $_POST['removeAuthor'];
 
-        $sqlDelete = "DELETE FROM books WHERE title = $removeTitle AND author = $removeAuthor";
+        $sqlDelete = "DELETE FROM books WHERE title = '$removeTitle' AND author = '$removeAuthor'";
 
         if (!mysqli_query($con, $sqlDelete)) {
             die('Error: ' . mysql_error());
