@@ -118,7 +118,7 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    print_r($_POST);
+    echo '<script type="text/javascript"> alert("' . print_r($_POST) . '");</script>';
     if ( isset($_POST['editTitleNew']) ) {
         echo "<h3>insde function</h3>";
         $editTitleOld = $_POST['editTitleOld'];
