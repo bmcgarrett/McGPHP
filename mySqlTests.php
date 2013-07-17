@@ -89,6 +89,7 @@ function ConnectToMySQL($myConnectionArray)
  */
 function AddBook($con)
 {
+    echo var_dump($_POST);
     if (isset($_POST['bTitle']) || isset($_POST['bAuthor'])) {
         $bTitle = $_POST['bTitle'];
         $bAuthor = $_POST['bAuthor'];
@@ -104,6 +105,7 @@ function AddBook($con)
 
 function DeleteBook($con)
 {
+    echo var_dump($_POST);
     if (isset($_POST['removeTitle']) || isset($_POST['removeAuthor'])) {
         $removeTitle = $_POST['removeTitle'];
         $removeAuthor = $_POST['removeAuthor'];
