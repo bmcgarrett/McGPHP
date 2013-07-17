@@ -7,6 +7,5 @@ $(document).ready(function() {
         var myBookTitle = $('#bookTitleInput').val();
         var myBookAuthor = $('#bookAuthorInput').val();
         $.post("/mySqlTests.php", { bTitle: myBookTitle, bAuthor: myBookAuthor });
-        $.get("/mySqlTests.php");
     });
 });
