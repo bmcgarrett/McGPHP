@@ -87,10 +87,10 @@ function AddBook($con)
 function DeleteBook($con)
 {
     if (isset($_POST['removeTitle']) || isset($_POST['removeAuthor'])) {
-        $bTitle = $_POST['removeTitle'];
-        $bAuthor = $_POST['removeAuthor'];
+        $removeTitle = $_POST['removeTitle'];
+        $removeAuthor = $_POST['removeAuthor'];
 
-        $sqlDelete = "DELETE FROM books WHERE title = $bTitle AND author = $bAuthor";
+        $sqlDelete = "DELETE FROM books WHERE title = $removeTitle AND author = $removeAuthor";
 
         if (!mysqli_query($con, $sqlDelete)) {
             die('Error: ' . mysql_error());
