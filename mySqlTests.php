@@ -15,11 +15,7 @@ $myConnectionArray = connStrToArray($conn_str);
 
 $con = ConnectToMySQL($myConnectionArray);
 
-AddBook($con);
-
-DeleteBook($con);
-
-EditBook($con);
+CheckPostForUpdates($con);
 
 CreateTableFromBooks($con);
 
@@ -87,7 +83,7 @@ function ConnectToMySQL($myConnectionArray)
  * @param $bAuthor
  * @param $con
  */
-function AddBook($con)
+function CheckPostForUpdates($con)
 {
     if (isset($_POST['bTitle']) && isset($_POST['bAuthor'])) {
         $bTitle = $_POST['bTitle'];
@@ -99,11 +95,7 @@ function AddBook($con)
             die('Error: ' . mysql_error());
         }
     }
-}
 
-
-function DeleteBook($con)
-{
     if (isset($_POST['removeTitle']) && isset($_POST['removeAuthor'])) {
         $removeTitle = $_POST['removeTitle'];
         $removeAuthor = $_POST['removeAuthor'];
@@ -114,10 +106,8 @@ function DeleteBook($con)
             die('Error: ' . mysql_error());
         }
     }
-}
 
-function EditBook($con)
-{
+
     if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['rowIDToChange']) ) {
 
         $editTitleNew = $_POST['editTitleNew'];
