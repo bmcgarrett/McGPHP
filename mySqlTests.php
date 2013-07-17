@@ -118,8 +118,8 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
-        echo "<h3>insde function</h3>";
+    //if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
+       // echo "<h3>insde function</h3>";
         $editTitleOld = $_POST['editTitleOld'];
         $editTitleNew = $_POST['editTitleNew'];
         $editAuthorOld = $_POST['editAuthorOld'];
@@ -131,7 +131,7 @@ function EditBook($con)
         if (!mysqli_query($con, $sqlUpdate)) {
             die('Error: ' . mysql_error());
         }
-    }
+   // }
 }
 
 /**
