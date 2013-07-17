@@ -40,7 +40,7 @@ $(document).ready(function() {
             alert(bookTitleField + bookAuthorField + editBookTitleField + editBookAuthorField);
             editBookTitleField = "";
             editBookAuthorField = "";
-            window.location = "/mySqlTests.php";
+            //window.location = "/mySqlTests.php";
         });
     });
 });
