@@ -114,6 +114,22 @@ function DeleteBook($con)
     }
 }
 
+function EditBook($con)
+{
+    if (isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && ($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
+        $editTitleOld = $_POST['editTitleOld'];
+        $editTitleNew = $_POST['editTitleNew'];
+        $editAuthorOld = $_POST['editAuthorOld'];
+        $editAuthorNew = $_POST['editAuthorNew'];
+
+        $sqlUpdate = "UPDATE books SET title = '$editTitleNew' AND author = '$editAuthorNew' WHERE title = '$editTitleOld' AND author = '$editAuthorOld'";
+
+        if (!mysqli_query($con, $sqlUpdate)) {
+            die('Error: ' . mysql_error());
+        }
+    }
+}
+
 /**
  * @param $con
  */
