@@ -118,8 +118,12 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    echo "<h3>hit function</h3>";
+    echo "<h3>" . $_POST['editTitleNew'] . "</h3>";
+    echo "<h3>" . $_POST['editTitleOld'] . "</h3>";
+    echo "<h3>" . $_POST['editAuthorNew'] . "</h3>";
+    echo "<h3>" . $_POST['editAuthorOld'] . "</h3>";
     if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
+        echo "<h3>insde function</h3>";
         $editTitleOld = $_POST['editTitleOld'];
         $editTitleNew = $_POST['editTitleNew'];
         $editAuthorOld = $_POST['editAuthorOld'];
