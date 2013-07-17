@@ -8,7 +8,7 @@ $(document).ready(function() {
         alert(myBookTitle + myBookAuthor);
         $.post("/mySqlTests.php", { bTitle: myBookTitle, bAuthor: myBookAuthor })..done(function(data) {
             alert("Data Loaded: " + data);
-        document.location.reload();
+        window.location.href = window.location.href;
         });
     });
 });
