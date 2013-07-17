@@ -12,6 +12,9 @@ $(document).ready(function() {
 
     $(document).on("click","#deleteBookRow",function(){
         var bookTitleField = $(this).parent().parent().find('#bookTitleField').text();
-        alert(bookTitleField);
+        var bookAuthorField = $(this).parent().parent().find('#bookAuthorField').text();
+        $.post("/mySqlTests.php", { removeTitle: myBookTitle, removeAuthor: myBookAuthor }).done(function () {
+            window.location = "/mySqlTests.php";
+        });
     });
 });

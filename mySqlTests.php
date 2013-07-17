@@ -15,7 +15,9 @@ $myConnectionArray = connStrToArray($conn_str);
 
 $con = ConnectToMySQL($myConnectionArray);
 
-AddBook($bTitle, $bAuthor, $con);
+AddBook($con);
+
+DeleteBook($con);
 
 CreateTableFromBooks($con);
 
@@ -67,7 +69,7 @@ function ConnectToMySQL($myConnectionArray)
  * @param $bAuthor
  * @param $con
  */
-function AddBook($bTitle, $bAuthor, $con)
+function AddBook($con)
 {
     if (isset($_POST['bTitle']) || isset($_POST['bAuthor'])) {
         $bTitle = $_POST['bTitle'];
@@ -76,6 +78,21 @@ function AddBook($bTitle, $bAuthor, $con)
         $sqlInsert = "INSERT INTO books (title,author) VALUES ('$bTitle','$bAuthor')";
 
         if (!mysqli_query($con, $sqlInsert)) {
+            die('Error: ' . mysql_error());
+        }
+    }
+}
+
+
+function DeleteBook($con)
+{
+    if (isset($_POST['removeTitle']) || isset($_POST['removeAuthor'])) {
+        $bTitle = $_POST['removeTitle'];
+        $bAuthor = $_POST['removeAuthor'];
+
+        $sqlDelete = "DELETE FROM books WHERE title = $bTitle AND author = $bAuthor";
+
+        if (!mysqli_query($con, $sqlDelete)) {
             die('Error: ' . mysql_error());
         }
     }
