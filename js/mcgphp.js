@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$('.navbar li').removeClass('active');
 	$('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
 
+    //Add Book Function
     $('#saveBtnAddBook').on('click', function(){
         var myBookTitle = $('#bookTitleInput').val();
         var myBookAuthor = $('#bookAuthorInput').val();
@@ -13,6 +14,7 @@ $(document).ready(function() {
         });
     });
 
+    //Delete Book Function
     $(document).on('click','#deleteBookRow',function(){
         var bookTitleField = $(this).parent().parent().find('#bookTitleField').text();
         var bookAuthorField = $(this).parent().parent().find('#bookAuthorField').text();
@@ -21,6 +23,7 @@ $(document).ready(function() {
         });
     });
 
+    //Edit Book Functions
     $(document).on('click','#editBookBtn',function(){
         editBookTitleField = $(this).parent().parent().find('#bookTitleField').text();
         editBookAuthorField = $(this).parent().parent().find('#bookAuthorField').text();
@@ -30,8 +33,8 @@ $(document).ready(function() {
     });
 
     $(document).on('click','#saveBtnEditBook',function(){
-        var bookTitleField = $('#bookTitleInputEdit').text();
-        var bookAuthorField = $('#bookAuthorInputEdit').text();
+        var bookTitleField = $('#bookTitleInputEdit').val();
+        var bookAuthorField = $('#bookAuthorInputEdit').val();
         alert(bookTitleField + bookAuthorField);
         $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField,editTitleOld: editBookTitleField, editAuthorOld: editBookAuthorField }).done(function () {
             editBookTitleField = "";
