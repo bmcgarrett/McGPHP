@@ -89,7 +89,6 @@ function ConnectToMySQL($myConnectionArray)
  */
 function AddBook($con)
 {
-    echo var_dump($_POST);
     if (isset($_POST['bTitle']) || isset($_POST['bAuthor'])) {
         $bTitle = $_POST['bTitle'];
         $bAuthor = $_POST['bAuthor'];
@@ -105,7 +104,6 @@ function AddBook($con)
 
 function DeleteBook($con)
 {
-    echo var_dump($_POST);
     if (isset($_POST['removeTitle']) || isset($_POST['removeAuthor'])) {
         $removeTitle = $_POST['removeTitle'];
         $removeAuthor = $_POST['removeAuthor'];
@@ -120,7 +118,6 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    echo var_dump($_POST);
     if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
         echo "<h3>insde function</h3>";
         $editTitleOld = $_POST['editTitleOld'];
