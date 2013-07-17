@@ -122,7 +122,7 @@ function EditBook($con)
         $editAuthorOld = $_POST['editAuthorOld'];
         $editAuthorNew = $_POST['editAuthorNew'];
 
-        $sqlUpdate = "UPDATE books SET title = '$editTitleNew' AND author = '$editAuthorNew' WHERE title = '$editTitleOld' AND author = '$editAuthorOld'";
+        $sqlUpdate = "UPDATE books SET title = '$editTitleNew',author = '$editAuthorNew' WHERE title = '$editTitleOld',author = '$editAuthorOld'";
 
         if (!mysqli_query($con, $sqlUpdate)) {
             die('Error: ' . mysql_error());
