@@ -10,8 +10,8 @@ $(document).ready(function() {
         });
     });
 
-    $('#deleteBookRow').on("click",function(){
+    $(document).on("click","#deleteBookRow",function(){
         var bookTitleField = $(this).parent().parent().find('#bookTitleField').text();
         alert(bookTitleField);
-    })
+    });
 });
