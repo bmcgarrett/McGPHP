@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    var editBookTitleField;
-    var editBookAuthorField;
+    var rowIDNum;
 
 	$('.navbar li').removeClass('active');
 	$('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
@@ -26,18 +25,15 @@ $(document).ready(function() {
     //Edit Book Functions
     $(document).on('click','#editBookBtn',function(){
         rowIDNum = $(this).parent().parent().attr('rowID');
-        alert(rowIDNum);
+
     });
 
     $(document).on('click','#saveBtnEditBook',function(){
         var bookTitleField = $('#bookTitleInputEdit').val();
         var bookAuthorField = $('#bookAuthorInputEdit').val();
-        alert(bookTitleField + " " + bookAuthorField + editBookTitleField + " " + editBookAuthorField);
-        $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField,editTitleOld: editBookTitleField, editAuthorOld: editBookAuthorField }).done(function () {
-            alert(bookTitleField + bookAuthorField + editBookTitleField + editBookAuthorField);
-            editBookTitleField = "";
-            editBookAuthorField = "";
-            //window.location = "/mySqlTests.php";
+        $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField, rowIDToChange: rowIDNum }).done(function () {
+            alert(bookTitleField + bookAuthorField + rowIDNum);
+            window.location = "/mySqlTests.php";
         });
     });
 });

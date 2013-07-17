@@ -118,15 +118,13 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    if ( isset($_POST['editTitleNew']) ) {
-        echo "<h3>insde function</h3>";
-        $editTitleOld = $_POST['editTitleOld'];
-        $editTitleNew = $_POST['editTitleNew'];
-        $editAuthorOld = $_POST['editAuthorOld'];
-        $editAuthorNew = $_POST['editAuthorNew'];
-        echo "<h1>" . $editTitleOld . $editTitleNew . $editAuthorOld . $editAuthorNew ."</h1>";
+    if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['rowIDToChange']) ) {
 
-        $sqlUpdate = "UPDATE books SET title = '$editTitleNew',author = '$editAuthorNew' WHERE title = '$editTitleOld',author = '$editAuthorOld'";
+        $editTitleNew = $_POST['editTitleNew'];
+        $editAuthorNew = $_POST['editAuthorNew'];
+        $rowToChange = $_POST['rowIDToChange'];
+        
+        $sqlUpdate = "UPDATE books SET title = '$editTitleNew',author = '$editAuthorNew' WHERE id = '$rowToChange'";
 
         if (!mysqli_query($con, $sqlUpdate)) {
             die('Error: ' . mysql_error());
