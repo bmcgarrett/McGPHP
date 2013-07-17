@@ -116,7 +116,7 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    if (isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && ($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
+    if (isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
         $editTitleOld = $_POST['editTitleOld'];
         $editTitleNew = $_POST['editTitleNew'];
         $editAuthorOld = $_POST['editAuthorOld'];
