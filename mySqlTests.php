@@ -118,7 +118,6 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    echo '<script type="text/javascript"> alert("' . print_r($_POST) . '");</script>';
     if ( isset($_POST['editTitleNew']) ) {
         echo "<h3>insde function</h3>";
         $editTitleOld = $_POST['editTitleOld'];
@@ -150,7 +149,7 @@ function CreateTableFromBooks($con)
     $bookCount = 0;
     while ($row = mysqli_fetch_array($result)) {
         $bookCount++;
-        echo "<tr><td><a id='deleteBookRow' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $row['title'] . "</td><td id='bookAuthorField'>" . $row["author"] . "</td><td><a id='editBookBtn' data-toggle='modal' role='button' class='btn' href='#editBookModal'>Edit</a></td></tr>";
+        echo "<tr rowID=" . $row['ID'] . "><td><a id='deleteBookRow' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $row['title'] . "</td><td id='bookAuthorField'>" . $row["author"] . "</td><td><a id='editBookBtn' data-toggle='modal' role='button' class='btn' href='#editBookModal'>Edit</a></td></tr>";
     }
 
     echo "</tbody>";
