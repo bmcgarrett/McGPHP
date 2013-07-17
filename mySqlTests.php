@@ -118,12 +118,13 @@ function DeleteBook($con)
 
 function EditBook($con)
 {
-    if (isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
+    if ( isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['editTitleOld']) && isset($_POST['editAuthorOld'])) {
         $editTitleOld = $_POST['editTitleOld'];
         $editTitleNew = $_POST['editTitleNew'];
         $editAuthorOld = $_POST['editAuthorOld'];
         $editAuthorNew = $_POST['editAuthorNew'];
         echo "<h1>" . $editTitleOld . $editTitleNew . $editAuthorOld . $editAuthorNew ."</h1>";
+
         $sqlUpdate = "UPDATE books SET title = '$editTitleNew',author = '$editAuthorNew' WHERE title = '$editTitleOld',author = '$editAuthorOld'";
 
         if (!mysqli_query($con, $sqlUpdate)) {

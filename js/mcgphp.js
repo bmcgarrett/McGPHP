@@ -37,6 +37,7 @@ $(document).ready(function() {
         var bookAuthorField = $('#bookAuthorInputEdit').val();
         alert(bookTitleField + " " + bookAuthorField + editBookTitleField + " " + editBookAuthorField);
         $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField,editTitleOld: editBookTitleField, editAuthorOld: editBookAuthorField }).done(function () {
+            alert(bookTitleField + bookAuthorField + editBookTitleField + editBookAuthorField);
             editBookTitleField = "";
             editBookAuthorField = "";
             window.location = "/mySqlTests.php";
