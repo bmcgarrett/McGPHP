@@ -33,7 +33,6 @@ $(document).ready(function() {
         var bookTitleField = $('#bookTitleInputEdit').val();
         var bookAuthorField = $('#bookAuthorInputEdit').val();
         $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField, rowIDToChange: rowIDNum }).done(function () {
-            alert(bookTitleField + bookAuthorField + rowIDNum);
             window.location = "/mySqlTests.php";
         });
     });
