@@ -32,6 +32,7 @@ $(document).ready(function() {
     $(document).on('click','#saveBtnEditBook',function(){
         var bookTitleField = $('#bookTitleInputEdit').text();
         var bookAuthorField = $('#bookAuthorInputEdit').text();
+        alert(bookTitleField + bookAuthorField);
         $.post("/mySqlTests.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField,editTitleOld: editBookTitleField, editAuthorOld: editBookAuthorField }).done(function () {
             editBookTitleField = "";
             editBookAuthorField = "";
