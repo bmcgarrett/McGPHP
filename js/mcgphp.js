@@ -25,11 +25,8 @@ $(document).ready(function() {
 
     //Edit Book Functions
     $(document).on('click','#editBookBtn',function(){
-        editBookTitleField = $(this).parent().parent().find('#bookTitleField').text();
-        editBookAuthorField = $(this).parent().parent().find('#bookAuthorField').text();
-        $('#bookTitleInputEdit').val(editBookTitleField);
-        $('#bookAuthorInputEdit').val(editBookAuthorField);
-
+        rowIDNum = $(this).parent().parent().attr('rowID');
+        alert(rowIDNum);
     });
 
     $(document).on('click','#saveBtnEditBook',function(){
