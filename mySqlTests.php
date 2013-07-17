@@ -19,6 +19,8 @@ AddBook($con);
 
 DeleteBook($con);
 
+EditBook($con);
+
 CreateTableFromBooks($con);
 
 CloseMySQLConnection($con);
