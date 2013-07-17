@@ -41,6 +41,22 @@ CloseMySQLConnection($con);
         <a id="saveBtnAddBook" href="#" class="btn btn-primary">Save changes</a>
     </div>
 </div>
+<div id="editBookModal" class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Edit Book</h3>
+    </div>
+    <div class="modal-body">
+        <h4>Book Title</h4>
+        <input id="bookTitleInputEdit" type="textfield">
+        <h4>Author</h4>
+        <input id="bookAuthorInputEdit" type="textfield">
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a id="saveBtnEditBook" href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
 
 <?php
 
@@ -113,7 +129,7 @@ function CreateTableFromBooks($con)
     $bookCount = 0;
     while ($row = mysqli_fetch_array($result)) {
         $bookCount++;
-        echo "<tr><td><a id='deleteBookRow' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $row['title'] . "</td><td id='bookAuthorField'>" . $row["author"] . "</td><td><a class='btn' href='#'>Edit</a></td></tr>";
+        echo "<tr><td><a id='deleteBookRow' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $row['title'] . "</td><td id='bookAuthorField'>" . $row["author"] . "</td><td><a id='editBookBtn' class='btn' href='#editBookModal'>Edit</a></td></tr>";
     }
 
     echo "</tbody>";
