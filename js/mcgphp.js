@@ -2,8 +2,6 @@ $(document).ready(function() {
     var editBookTitleField;
     var editBookAuthorField;
 
-
-
 	$('.navbar li').removeClass('active');
 	$('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
 
@@ -23,12 +21,11 @@ $(document).ready(function() {
         });
     });
 
-
     $(document).on('click','#editBookBtn',function(){
         editBookTitleField = $(this).parent().parent().find('#bookTitleField').text();
         editBookAuthorField = $(this).parent().parent().find('#bookAuthorField').text();
-        $('#bookTitleInputEdit').text(editBookTitleField);
-        $('#bookAuthorInputEdit').text(editBookAuthorField);
+        $('#bookTitleInputEdit').val(editBookTitleField);
+        $('#bookAuthorInputEdit').val(editBookAuthorField);
 
     });
 
