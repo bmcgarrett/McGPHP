@@ -11,7 +11,7 @@ $db = $m->selectDB($db_name);
 
 $cursor = $db->listCollections();
 $collection_name = "";
-echo "<h3>Mongo Collections</h3>";
+echo "<h3>MongoHQ Collections</h3>";
 foreach( $cursor as $doc ) {
     echo "<li>" .  $doc->getName() . "</li>";
     $collection_name = $doc->getName();
