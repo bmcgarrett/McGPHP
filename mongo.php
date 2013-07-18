@@ -67,7 +67,7 @@ function ModifyDB($collection){
     if (isset($_POST['bookIDToRemove'])){
         $objectToRemove = $_POST['bookIDToRemove'];
 
-        $collection->remove(array('_id' => new MongoId($objectToRemove)),true);
+        $collection->remove(array('_id' => new MongoId($objectToRemove)),array("safe" => true));
     }
 }
 
