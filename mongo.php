@@ -5,14 +5,14 @@ try {
     $connection_url = getenv("CUSTOMCONNSTR_mongo");
     $collection_name = "learn";
 
-// create the mongo connection object
+    // create the mongo connection object
     $m = new Mongo($connection_url);
 
-// extract the DB name from the connection path
+    // extract the DB name from the connection path
     $url = parse_url($connection_url);
     $db_name = preg_replace('/\/(.*)/', '$1', $url['path']);
 
-// use the database we connected to
+    // use the database we connected to
     $db = $m->selectDB($db_name);
 
     $collection = $db->selectCollection($collection_name);
@@ -37,13 +37,13 @@ try {
     echo "<a class='btn' href='#addBookModal' data-toggle='modal' role='button'>Add Book</a>";
 
 
-// disconnect from server
+    // disconnect from server
     $m->close();
-} catch ( MongoConnectionException $e ) {
+}catch ( MongoConnectionException $e ) {
     die('Error connecting to MongoDB server');
-} catch ( MongoException $e ) {
+}catch ( MongoException $e ) {
     die('Mongo Error: ' . $e->getMessage());
-} catch ( Exception $e ) {
+}catch ( Exception $e ) {
     die('Error: ' . $e->getMessage());
 }
 

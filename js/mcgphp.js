@@ -50,6 +50,7 @@ $(document).ready(function() {
     //Delete Book Function - MongoDB
     $(document).on('click','#deleteBookRowMongo',function(){
         rowIDNum = $(this).parent().parent().attr('rowID');
+        alert(rowIDNum);
         $.post("/mongo.php", { bookIDToRemove: rowIDNum }).done(function () {
             window.location = "/mongo.php";
         });
