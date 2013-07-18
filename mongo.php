@@ -1,6 +1,4 @@
-<?php include_once('header.php'); ?>
-
-<?php
+<?php include_once('header.php');
 
 $conn_str = getenv("CUSTOMCONNSTR_mongo");
 
@@ -20,8 +18,4 @@ foreach( $cursor as $doc ) {
 }
 echo "</ul>";
 
-?>
-
-
-
-<?php include_once('footer.php'); ?>
+include_once('footer.php'); ?>
