@@ -28,7 +28,7 @@ try {
 
     $bookCount = 1;
     foreach ( $cursor as $doc ){
-        echo "<tr rowID='" . $doc['_id'] . "'><td><a id='deleteBookRowMongo' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $doc['title'] . "</td><td id='bookAuthorField'>" . $doc["author"] . "</td><td><a id='editBookBtn' data-toggle='modal' role='button' class='btn' href='#editBookModal'>Edit</a></td></tr>";
+        echo "<tr rowID='" . $doc['_id'] . "'><td><a id='deleteBookRowMongo' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $doc['title'] . "</td><td id='bookAuthorField'>" . $doc["author"] . "</td><td><a id='editBookBtnMongo' data-toggle='modal' role='button' class='btn' href='#editBookModal'>Edit</a></td></tr>";
         $bookCount++;
     }
 
@@ -69,6 +69,19 @@ function ModifyDB($collection){
 
         $collection->remove(array('_id' => new MongoId($objectToRemove)),array("safe" => true));
     }
+
+    if (isset($_POST['editTitleNew']) && isset($_POST['editAuthorNew']) && isset($_POST['rowIDToChange'])){
+        $editTitleNew = $_POST['editTitleNew'];
+        $editAuthorNew = $_POST['editAuthorNew'];
+        $objectToChange = $_POST['rowIDToChange'];
+
+        $bookToUpdate = array(
+            'title' => $editTitleNew,
+            'author' => $editAuthorNew,
+        );
+
+        $collection->update(array('_id' => new MongoId($objectToChange)),$bookToUpdate);
+    }
 }
 
 ?>
@@ -87,5 +100,22 @@ function ModifyDB($collection){
     <div class="modal-footer">
         <a href="#" class="btn">Close</a>
         <a id="saveBtnAddBookMongo" href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
+
+<div id="editBookModal" class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Edit Book</h3>
+    </div>
+    <div class="modal-body">
+        <h4>Book Title</h4>
+        <input id="bookTitleInputEdit" type="textfield">
+        <h4>Author</h4>
+        <input id="bookAuthorInputEdit" type="textfield">
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a id="saveBtnEditBookMongo" href="#" class="btn btn-primary">Save changes</a>
     </div>
 </div>

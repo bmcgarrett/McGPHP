@@ -1,5 +1,6 @@
 $(document).ready(function() {
     var rowIDNum;
+    var rowIDNumMongo;
 
 	$('.navbar li').removeClass('active');
 	$('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
@@ -49,8 +50,23 @@ $(document).ready(function() {
 
     //Delete Book Function - MongoDB
     $(document).on('click','#deleteBookRowMongo',function(){
-        var rowIDNumMongo = $(this).parent().parent().attr('rowID');
-        $.post("/mongo.php", { bookIDToRemove: rowIDNumMongo }).done(function () {
+        var rowIDNumToRemove = $(this).parent().parent().attr('rowID');
+        $.post("/mongo.php", { bookIDToRemove: rowIDNumToRemove }).done(function () {
+            window.location = "/mongo.php";
+        });
+    });
+
+    //Edit Book Functions
+    $(document).on('click','#editBookBtnMongo',function(){
+        rowIDNumMongo = $(this).parent().parent().attr('rowID');
+        $('#bookTitleInputEdit').val($(this).parent().parent().find('#bookTitleField').text());
+        $('#bookAuthorInputEdit').val($(this).parent().parent().find('#bookAuthorField').text());
+    });
+
+    $(document).on('click','#saveBtnEditBookMongo',function(){
+        var bookTitleField = $('#bookTitleInputEdit').val();
+        var bookAuthorField = $('#bookAuthorInputEdit').val();
+        $.post("/mongo.php", { editTitleNew: bookTitleField, editAuthorNew: bookAuthorField, rowIDToChange: rowIDNumMongo }).done(function () {
             window.location = "/mongo.php";
         });
     });
