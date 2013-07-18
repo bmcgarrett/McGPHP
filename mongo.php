@@ -39,12 +39,12 @@ try {
 
     // disconnect from server
     $m->close();
-}catch ( MongoConnectionException $e ) {
-    die('Error connecting to MongoDB server');
-}catch ( MongoException $e ) {
-    die('Mongo Error: ' . $e->getMessage());
-}catch ( Exception $e ) {
-    die('Error: ' . $e->getMessage());
+}   catch ( MongoConnectionException $e ) {
+        die('Error connecting to MongoDB server');
+}   catch ( MongoException $e ) {
+        die('Mongo Error: ' . $e->getMessage());
+}   catch ( Exception $e ) {
+        die('Error: ' . $e->getMessage());
 }
 
 include_once('footer.php'); ?>
