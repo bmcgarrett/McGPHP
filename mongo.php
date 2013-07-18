@@ -4,10 +4,7 @@ $conn_str = getenv("CUSTOMCONNSTR_mongo");
 
 $m = new Mongo($conn_str);
 
-$url = parse_url($connection_url);
-$db_name = preg_replace('/\/(.*)/', '$1', $url['path']);
-
-$db = $m->selectDB($db_name);
+$db = $m->selectDB('bmacusers');
 
 $cursor = $db->listCollections();
 $collection_name = "";
