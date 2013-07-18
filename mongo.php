@@ -4,7 +4,7 @@ $conn_str = getenv("CUSTOMCONNSTR_mongo");
 
 $m = new Mongo($conn_str);
 
-$db = $m->selectDB('bmacusers');
+$db = $m->selectDB("bmacusers");
 
 $cursor = $db->listCollections();
 $collection_name = "";
