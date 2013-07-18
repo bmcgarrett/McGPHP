@@ -60,11 +60,6 @@ CloseMySQLConnection($con);
 
 include_once('footer.php');
 
-
-
-/**
- * @return mysqli
- */
 function ConnectToMySQL($myConnectionArray)
 {
     $con = mysqli_connect($myConnectionArray['Data Source'],$myConnectionArray['User Id'],$myConnectionArray['Password'],$myConnectionArray['Database']);
@@ -78,11 +73,6 @@ function ConnectToMySQL($myConnectionArray)
     return $con;
 }
 
-/**
- * @param $bTitle
- * @param $bAuthor
- * @param $con
- */
 function CheckPostForUpdates($con)
 {
     if (isset($_POST['bTitle']) && isset($_POST['bAuthor'])) {
@@ -122,9 +112,7 @@ function CheckPostForUpdates($con)
     }
 }
 
-/**
- * @param $con
- */
+
 function CreateTableFromBooks($con)
 {
     $result = mysqli_query($con, "Select * From books");
@@ -145,9 +133,7 @@ function CreateTableFromBooks($con)
     echo "<a class='btn' href='#addBookModal' data-toggle='modal' role='button'>Add Book</a>";
 }
 
-/**
- * @param $con
- */
+
 function CloseMySQLConnection($con)
 {
     mysqli_close($con);

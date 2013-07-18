@@ -28,7 +28,7 @@ try {
 
     $bookCount = 1;
     foreach ( $cursor as $doc ){
-        echo "<tr rowID='" . $doc['_id'] . "'><td><a id='deleteBookRow' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $doc['title'] . "</td><td id='bookAuthorField'>" . $doc["author"] . "</td><td><a id='editBookBtn' data-toggle='modal' role='button' class='btn' href='#editBookModal'>Edit</a></td></tr>";
+        echo "<tr rowID='" . $doc['_id'] . "'><td><a id='deleteBookRowMongo' class='btn btn-danger' href='#'>Delete</a><td>" . $bookCount . "</td><td id='bookTitleField'>" . $doc['title'] . "</td><td id='bookAuthorField'>" . $doc["author"] . "</td><td><a id='editBookBtn' data-toggle='modal' role='button' class='btn' href='#editBookModal'>Edit</a></td></tr>";
         $bookCount++;
     }
 
@@ -62,6 +62,12 @@ function ModifyDB($collection){
         );
 
         $collection->insert($bookToInsert);
+    }
+
+    if (isset($_POST['bookIDToRemove'])){
+        $objectToRemove = $_POST['bookIDToRemove'];
+
+        $collection->remove(array('_id' => new MongoId($objectToRemove)),true);
     }
 }
 

@@ -45,4 +45,13 @@ $(document).ready(function() {
             window.location = "/mongo.php";
         });
     });
+
+
+    //Delete Book Function - MongoDB
+    $(document).on('click','#deleteBookRowMongo',function(){
+        rowIDNum = $(this).parent().parent().attr('rowID');
+        $.post("/mongo.php", { bookIDToRemove: rowIDNum }).done(function () {
+            window.location = "/mongo.php";
+        });
+    });
 });
