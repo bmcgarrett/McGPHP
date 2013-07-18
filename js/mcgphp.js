@@ -36,4 +36,13 @@ $(document).ready(function() {
             window.location = "/mySql.php";
         });
     });
+
+    //Add Book Function - MongoDB
+    $('#saveBtnAddBookMongo').on('click', function(){
+        var myBookTitle = $('#bookTitleInput').val();
+        var myBookAuthor = $('#bookAuthorInput').val();
+        $.post("/mongo.php", { bookTitle: myBookTitle, bookAuthor: myBookAuthor }).done(function () {
+            window.location = "/mongo.php";
+        });
+    });
 });

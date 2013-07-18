@@ -17,6 +17,8 @@ try {
 
     $collection = $db->selectCollection($collection_name);
 
+    ModifyDB($collection);
+
     $cursor = $collection->find();
 
     echo "<h1>Mongo Books Database</h1>";
@@ -46,3 +48,38 @@ try {
 }
 
 include_once('footer.php'); ?>
+
+<?php
+
+function ModifyDB($collection){
+    if (isset($_POST['bookTitle']) && isset($_POST['bookAuthor'])) {
+        $bTitle = $_POST['bookTitle'];
+        $bAuthor = $_POST['bookAuthor'];
+
+        $bookToInsert = array(
+          'title' => $bTitle,
+          'author' => $bAuthor,
+        );
+
+        $collection->insert($bookToInsert);
+    }
+}
+
+?>
+
+<div id="addBookModal" class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Add Book</h3>
+    </div>
+    <div class="modal-body">
+        <h4>Book Title</h4>
+        <input id="bookTitleInput" type="textfield">
+        <h4>Author</h4>
+        <input id="bookAuthorInput" type="textfield">
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a id="saveBtnAddBookMongo" href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
